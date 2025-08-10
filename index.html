@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Painel de Controle</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<header>
+  <h1>📊 Painel de Gráficos</h1>
+  <p>Para simples demonstração</p>
+</header>
+
+<main>
+  <section>
+    <h2>Acessos Diários</h2>
+    <label for="rangeSelect">Intervalo de meses:</label>
+    <select id="rangeSelect">
+      <option value="6">Últimos 6 meses</option>
+      <option value="12" selected>Últimos 12 meses</option>
+    </select>
+    <div class="chart-container">
+      <canvas id="lineChart"></canvas>
+    </div>
+  </section>
+
+  <section>
+    <h2>Vendas por Categoria</h2>
+    <div class="chart-container">
+      <canvas id="barChart"></canvas>
+    </div>
+  </section>
+
+  <section>
+    <h2>Usuários</h2>
+    <div class="chart-container">
+      <canvas id="pieChart"></canvas>
+    </div>
+  </section>
+
+  <section>
+    <h2>Desempenho</h2>
+    <div class="chart-container">
+      <canvas id="radarChart"></canvas>
+    </div>
+  </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/lineChart.js"></script>
+<script src="js/barChart.js"></script>
+<script src="js/pieChart.js"></script>
+<script src="js/radarChart.js"></script>
+</body>
+</html>
