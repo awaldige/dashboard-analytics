@@ -1,86 +1,103 @@
 # 📊 Dashboard Analytics
 
-Dashboard Analytics é uma aplicação web interativa desenvolvida para visualização e análise de dados, simulando métricas de negócios em um painel moderno e responsivo. O projeto foi criado para fins de portfólio, demonstrando manipulação de dados, gráficos dinâmicos e experiência de usuário em tempo real.
+**Dashboard interativo para visualização e análise de indicadores, desenvolvido com HTML5, CSS3 e JavaScript.**
 
----
+O Dashboard Analytics é um projeto de front-end criado para demonstrar a construção de uma interface administrativa moderna, com indicadores de desempenho, gráficos dinâmicos e ferramentas para explorar dados simulados.
 
-## 🌐 Demonstração Online
-🔗 https://dashboard-analytics-orpin.vercel.app/
+## 🌐 Demonstração online
 
----
+🔗 **Acesse o projeto:** https://dashboard-analytics-orpin.vercel.app/
+
 ## 🖼️ Demonstração Visual
 ![IMG_1286](https://github.com/user-attachments/assets/2efffc9b-4c5d-4ab4-8d2f-82491f0d5300)
 ![IMG_1288](https://github.com/user-attachments/assets/549af6f7-94af-48f0-a3cd-7b5b65c7e436)
 ![IMG_1287](https://github.com/user-attachments/assets/c4047676-5512-4de5-8086-49b339ead8b3)
 
 
----
+## ✨ Funcionalidades
 
-## 🚀 Funcionalidades
-
-- 📈 KPIs dinâmicos (usuários, receita, vendas, etc.)
-- 📊 Gráficos interativos para análise de dados
+- 📈 Indicadores de desempenho (KPIs)
+- 📊 Gráficos interativos com Chart.js
 - 🔍 Filtros por período e categorias
 - 📋 Tabela de dados com busca e ordenação
-- 🌙 Alternância entre modo claro e escuro
-- 📱 Layout totalmente responsivo
-- ⚡ Atualização dinâmica sem recarregar a página
+- 🌙 Alternância entre modo claro e modo escuro
+- 📱 Interface responsiva
+- ⚡ Atualização dinâmica da interface sem recarregar a página
+- 💾 Armazenamento de preferências com LocalStorage, conforme implementado
 
----
+## 🛠️ Tecnologias utilizadas
 
-## 🛠 Tecnologias Utilizadas
+- **HTML5:** estrutura da aplicação
+- **CSS3:** estilos e responsividade
+- **JavaScript (Vanilla):** lógica e interatividade
+- **Chart.js:** criação de gráficos
+- **LocalStorage:** armazenamento local de preferências
 
-| Tecnologia | Função |
-|------------|--------|
-| HTML5 | Estrutura da aplicação |
-| CSS3 | Estilização e responsividade |
-| JavaScript (Vanilla) | Manipulação de dados e interações |
-| Chart.js | Gráficos interativos |
-| LocalStorage | Persistência de preferências do usuário |
+## 📂 Estrutura do projeto
 
----
-
-## 📂 Estrutura do Projeto
-
+```text
 dashboard-analytics/
-│
-├── index.html # Página principal
-├── style.css # Estilos do dashboard
-├── script.js # Lógica de dados e gráficos
-└── README.md # Documentação do projeto
+├── js/
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
 
+## 🚀 Como executar localmente
 
----
-
-## ▶️ Como Executar Localmente
-
-1. Clone o repositório:
+### 1. Clone o repositório
 
 ```bash
 git clone https://github.com/awaldige/dashboard-analytics.git
-Entre na pasta do projeto:
+```
 
+### 2. Entre na pasta
+
+```bash
 cd dashboard-analytics
-Abra o arquivo index.html no navegador.
+```
 
-Não é necessário instalar dependências ou servidor.
+### 3. Abra o projeto
 
-📌 Objetivo do Projeto
-Este dashboard foi desenvolvido como projeto de estudo e portfólio, simulando uma interface administrativa moderna para análise de métricas e indicadores de desempenho.
+Abra o arquivo `index.html` no navegador.
 
-🔮 Melhorias Futuras
-Integração com API real
+Não é necessário instalar dependências ou configurar um backend para executar a versão front-end documentada.
 
-Login de usuários
+## 🎯 Objetivo do projeto
 
-Exportação de relatórios
+Praticar e demonstrar conhecimentos de desenvolvimento front-end, manipulação do DOM, visualização de dados, criação de gráficos e construção de interfaces responsivas.
 
-Múltiplos dashboards personalizados
+## 🔮 Melhorias futuras
 
-Backend para persistência de dados
+- Integração com uma API para utilizar dados reais
+- Autenticação de usuários
+- Exportação de relatórios
+- Dashboards personalizados
+- Backend para persistência de dados
 
-👨‍💻 Autor
-Desenvolvido por André Waldige
-🔗 GitHub: https://github.com/awaldige
+## 👨‍💻 Autor
 
-⭐ Projeto criado para fins de aprendizado e demonstração em portfólio.
+**André Waldige | AW TECHNOLOGY**
+
+Desenvolvedor web focado na criação de sites, sistemas web e soluções digitais para empresas.
+
+### 🌐 Conecte-se comigo
+
+- 💼 **Portfólio:** [andre-waldige.vercel.app](https://andre-waldige.vercel.app/)
+- 🐙 **GitHub:** [@awaldige](https://github.com/awaldige)
+- 📸 **Instagram:** [@awtechnologybr](https://www.instagram.com/awtechnologybr/)
+
+### 🛠️ Áreas de atuação
+
+- Desenvolvimento de sites e interfaces responsivas
+- Sistemas web e aplicações personalizadas
+- Dashboards e visualização de dados
+- Catálogos digitais e projetos para empresas
+- Automação e otimização de processos
+
+---
+
+**AW TECHNOLOGY — Tecnologia e desenvolvimento sob medida.**
+
+⭐ Projeto desenvolvido para estudo e demonstração de habilidades em desenvolvimento web.
