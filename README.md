@@ -13,11 +13,10 @@ https://dashboard-analytics-orpin.vercel.app/
 
 ## 🖼️ Demonstração visual
 
-![Dashboard Analytics - Visão geral](https://github.com/user-attachments/assets/2efffc9b-4c5d-4ab4-8d2f-82491f0d5300)
+<img width="1351" height="763" alt="home clara" src="https://github.com/user-attachments/assets/e388c119-d16d-40c0-b1ff-c5bf9df25824" />
+<img width="1350" height="763" alt="home escura" src="https://github.com/user-attachments/assets/1144cc49-c2a2-4f18-8aa7-374f38c8bbb1" />
 
-![Dashboard Analytics - Indicadores e gráficos](https://github.com/user-attachments/assets/549af6f7-94af-48f0-a3cd-7b5b65c7e436)
 
-![Dashboard Analytics - Visualização adicional](https://github.com/user-attachments/assets/c4047676-5512-4de5-8086-49b339ead8b3)
 
 ## ✨ Funcionalidades
 
