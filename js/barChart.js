@@ -1,34 +1,97 @@
-const ctxBar = document.getElementById('barChart').getContext('2d');
-new Chart(ctxBar, {
-  type: 'bar',
-  data: {
-    labels: ['Eletrônicos', 'Roupas', 'Casa', 'Beleza', 'Livros'],
-    datasets: [{
-      label: 'Vendas',
-      data: [200, 150, 100, 80, 120],
-      backgroundColor: [
-        'rgba(255, 99, 132, 0.7)',
-        'rgba(54, 162, 235, 0.7)',
-        'rgba(255, 206, 86, 0.7)',
-        'rgba(75, 192, 192, 0.7)',
-        'rgba(153, 102, 255, 0.7)'
-      ],
-      borderColor: [
-        'rgba(255, 99, 132, 1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)'
-      ],
-      borderWidth: 1
-    }]
-  },
-  options: {
-    responsive: true,
-    maintainAspectRatio: false,
-    plugins: { legend: { display: false } },
-    scales: { y: { beginAtZero: true, ticks: { stepSize: 50 } } }
-  }
-});
 
+let barChartInstance = null;
 
+function createBarChart(data) {
+    const canvas = document.getElementById('barChart');
+
+    if (!canvas) return;
+
+    if (barChartInstance) {
+        barChartInstance.destroy();
+    }
+
+    const ctx = canvas.getContext('2d');
+
+    barChartInstance = new Chart(ctx, {
+        type: 'bar',
+
+        data: {
+            labels: data.labels,
+
+            datasets: [{
+                label: 'Vendas',
+                data: data.values,
+                backgroundColor: [
+                    '#3b82f6',
+                    '#8b5cf6',
+                    '#10b981',
+                    '#f59e0b',
+                    '#06b6d4'
+                ],
+                borderRadius: 7,
+                borderSkipped: false,
+                maxBarThickness: 48
+            }]
+        },
+
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+
+            plugins: {
+                legend: {
+                    display: false
+                },
+
+                tooltip: {
+                    backgroundColor: '#151f30',
+                    titleColor: '#ffffff',
+                    bodyColor: '#cbd5e1',
+                    padding: 12,
+                    displayColors: false,
+
+                    callbacks: {
+                        label: function(context) {
+                            return ' ' + context.parsed.y +
+                                ' vendas';
+                        }
+                    }
+                }
+            },
+
+            scales: {
+                x: {
+                    grid: {
+                        display: false
+                    },
+                    ticks: {
+                        color: '#94a3b8',
+                        font: {
+                            size: 10
+                        }
+                    },
+                    border: {
+                        display: false
+                    }
+                },
+
+                y: {
+                    beginAtZero: true,
+                    grid: {
+                        color: 'rgba(148, 163, 184, 0.10)'
+                    },
+                    ticks: {
+                        color: '#94a3b8',
+                        precision: 0,
+                        font: {
+                            size: 10
+                        }
+                    },
+                    border: {
+                        display: false
+                    }
+                }
+            }
+        }
+    });
+}
